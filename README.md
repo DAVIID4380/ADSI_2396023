@@ -6,4 +6,4 @@
 
 ### 01-emmet
 
-https://www.datocms-assets.com/14946/1590690720-frontend-and-backend-frameworks.png
+![front-end](https://www.datocms-assets.com/14946/1590690720-frontend-and-backend-frameworks.png)
