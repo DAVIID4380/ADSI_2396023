@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilos_ejercicio6.css" media="all" />
+    <script
+      src="https://kit.fontawesome.com/6d5df60d71.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Ángel David Botina Osorio</title>
+  </head>
+  <body onsubmit="alert('Bienvenido a mi web')">
+    <form autocomplete="off">
+      <section class="form-registro">
+        <h4>Registrate</h4>
+        <input
+          class="form-registro__cajas"
+          type="text"
+          name="primer_nombre"
+          placeholder="Primer Nombre"
+          pattern="[a-zA-Z ]{2,254}"
+          title="Solo letras, Mínimo 2"
+          autofocus
+          required
+        />
+        <input
+          class="form-registro__cajas"
+          type="text"
+          name="Segundo nombre"
+          placeholder="Segundo nombre"
+          pattern="[a-zA-Z ]{2,254}"
+          title="Solo letras, Mínimo 2"
+        />
+        <input
+          class="form-registro__cajas"
+          type="text"
+          name="Primer apellido"
+          placeholder="Primer apellido"
+          pattern="[a-zA-Z ]{2,254}"
+          title="Solo letras, Mínimo 2"
+          required
+        />
+        <input
+          class="form-registro__cajas"
+          type="text"
+          name="Segundo apellido"
+          placeholder="Segundo apellido"
+          pattern="[a-zA-Z ]{2,254}"
+          title="Solo letras, Mínimo 2"
+          required
+        />
+        <select class="form-registro__cajas" name="tipo de documento" required>
+          <option disabled selected hidden>Tipo de documento</option>
+          <option>Tarjeta de identidad</option>
+          <option>Cédula de ciudadanía</option>
+          <option>Cédula de extranjería</option>
+        </select>
+        <input
+          class="form-registro__cajas"
+          type="text"
+          name="Numero de documento"
+          placeholder="Número de documento"
+          minlength="8"
+          maxlength="10"
+          pattern="^[0-9]+"
+          title="Solo números. Mínimo 8, Máximo 10"
+          required
+        />
+        <select class="form-registro__cajas" name="estado civil" required>
+          <option disabled selected hidden>Estado civil</option>
+          <option>Soltero</option>
+          <option>Casado</option>
+          <option>Divorciado</option>
+          <option>Viudo</option>
+        </select>
+        <input
+          class="form-registro__cajas"
+          type="text"
+          name="Direccion de residencia"
+          placeholder="Dirección de residencia"
+          minlength="5"
+          required
+        />
+        <input
+          class="form-registro__cajas"
+          type="email"
+          name="Correo electronico"
+          placeholder="Correo electrónico"
+          required
+        />
+        <input
+          class="form-registro__cajas"
+          type="tel"
+          name="Telefono"
+          pattern="[0-9]{3}-[0-9]{4}"
+          title="Un número de teléfono válido debe tener 3 dígitos, un guión (-) y cuatro dígitos más"
+          minlength="8"
+          maxlength="8"
+          placeholder="Teléfono"
+        />
+        <input
+          class="form-registro__cajas"
+          type="tel"
+          name="Celular"
+          placeholder="Celular"
+          pattern="^[0-9]+"
+          title="Solo números"
+          minlength="10"
+          required
+        />
+        <section class="form-registro__estrato">
+          <h5>Selecciona tu estrato</h5>
+          <label>
+            1
+            <input
+              class="form-registro__botones--radio"
+              type="radio"
+              name="Estrato"
+              value="1"
+              checked
+              required
+            />
+          </label>
+          2
+          <label>
+            <input
+              class="form-registro__botones--radio"
+              type="radio"
+              name="Estrato"
+              value="2"
+              required
+            />
+          </label>
+          <label>
+            3
+            <input
+              class="form-registro__botones--radio"
+              type="radio"
+              name="Estrato"
+              value="3"
+              required
+            />
+          </label>
+          <label>
+            4
+            <input
+              class="form-registro__botones--radio"
+              type="radio"
+              name="Estrato"
+              value="4"
+              required
+            />
+          </label>
+          <label>
+            5
+            <input
+              class="form-registro__botones--radio"
+              type="radio"
+              name="Estrato"
+              value="5"
+              required
+            />
+          </label>
+          <label>
+            6
+            <input
+              class="form-registro__botones--radio"
+              type="radio"
+              name="Estrato"
+              value="6"
+              required
+            />
+          </label>
+        </section>
+        <section class="form-registro__hobbies">
+          <h5>Selecciona tus hobbies</h5>
+          <label>
+            Música
+            <input
+              class="form-registro__botones--checkbox"
+              type="checkbox"
+              name="Hobbies"
+              value="Música"
+            />
+          </label>
+          <label>
+            Descansar
+            <input
+              class="form-registro__botones--checkbox"
+              type="checkbox"
+              name="Hobbies"
+              value="Descansar"
+            />
+          </label>
+          <label>
+            Leer
+            <input
+              class="form-registro__botones--checkbox"
+              type="checkbox"
+              name="Hobbies"
+              value="Leer"
+            />
+          </label>
+          <br />
+          <label>
+            Deporte
+            <input
+              class="form-registro__botones--checkbox"
+              type="checkbox"
+              name="Hobbies"
+              value="Deporte"
+            />
+          </label>
+          <label>
+            Ejercicio
+            <input
+              class="form-registro__botones--checkbox"
+              type="checkbox"
+              name="Hobbies"
+              value="Ejercicio"
+            />
+          </label>
+          <label>
+            Otros
+            <input
+              class="form-registro__botones--checkbox"
+              type="checkbox"
+              name="Hobbies"
+              value="Otros"
+            />
+          </label>
+        </section>
+        <textarea
+          class="form-registro__cajas"
+          placeholder="Escriba su proyecto de vida en 2 años"
+          required
+        ></textarea>
+        <input
+          class="form-registro__cajas"
+          type="file"
+          name="Adjuntar archivo"
+        />
+        <input
+          class="form-registro__botones"
+          type="reset"
+          name="Resetear"
+          value="Limpiar"
+        />
+        <p>
+          <input type="checkbox" name="Terminos-condiciones" required />Estoy de
+          acuerdo con los <a href="#">Terminos y Condiciones</a>
+        </p>
+        <input
+          class="form-registro__botones"
+          type="submit"
+          name="Registrarse"
+          value="Registrarse"
+        />
+      </section>
+    </form>
+    <div id="boton">
+      <a href="http://127.0.0.1:5500/index.html">
+        <button type="button" class="boton">
+          <i class="fas fa-home"></i>&nbsp;<span>Menu</span>
+        </button>
+      </a>
+    </div>
+  </body>
+</html>

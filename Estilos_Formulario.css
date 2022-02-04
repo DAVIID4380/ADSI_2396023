@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: black;
+  background-image: url(../img/6.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+.form-registro {
+  width: 500px;
+  background: #24303c;
+  padding: 30px;
+  margin: auto;
+  margin-top: 100px;
+  font-family: calibri;
+  color: white;
+  box-shadow: 7px 13px 37px #000;
+}
+.form-registro h4 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+.form-registro__cajas {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+  font-family: 'calibri';
+  color: white;
+}
+.form-registro h5 {
+  font-size: 22px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.form-registro__estrato {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+}
+.form-registro__botones--radio {
+  margin-left: 0;
+  margin-right: 20px;
+}
+.form-registro__hobbies {
+  width: 100%;
+  background: #24303c;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  border: 1px solid #1f53c5;
+}
+.form-registro__botones--checkbox {
+  margin: 0 50px 20px 0;
+}
+textarea {
+  resize: none;
+}
+.form-registro p {
+  height: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 40px;
+}
+.form-registro a {
+  color: white;
+  text-decoration: none;
+}
+.form-registro a:hover {
+  color: white;
+  text-decoration: underline;
+}
+.form-registro__botones {
+  width: 100%;
+  background: #1f53c5;
+  border: 4px soild;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 00.3s;
+  box-shadow: 0px 5px 10px 0px #0077ff;
+  padding: 12px;
+  color: white;
+  margin: 16px 0;
+  font-size: 16px;
+}
+.form-registro__botones:hover {
+  cursor: pointer;
+  background: #010c6b;
+}
+#boton {
+  width: 188px;
+  margin: 0px auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+.boton {
+  background-color: #0077ff;
+  color: white;
+  font-family: cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 5px;
+  width: 200px;
+  border: 4px soild #00d9ff;
+  border-radius: 10px;
+  transition-duration: 0.3s;
+  -webkit-transition-duration: 00.3s;
+  box-shadow: 0px 5px 10px 0px #00e5ff;
+}
+.boton:hover {
+  background-color: #7abfe7;
+  color: rgb(247, 140, 0);
+}
+.boton span,
+i {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.3s;
+}
+.boton span:after {
+  content: '>>';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.3s;
+}
+.boton:hover span {
+  padding-right: 25px;
+}
+.boton:hover span:after {
+  opacity: 1;
+  right: 0;
+}
