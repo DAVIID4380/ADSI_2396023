@@ -4,7 +4,14 @@
 
 ## themes:
 
-![front-end](https://www.datocms-assets.com/14946/1590690720-frontend-and-backend-frameworks.png)
+## ![front-end](https://www.datocms-assets.com/14946/1590690720-frontend-and-backend-frameworks.png)
+
+| Theme         | Links                              |
+| ------------- | ---------------------------------- | --------------------- |
+| 1. Emmet      | Improves Workflow in HTML/CSS      | [Open](01-emmet/)     |
+| 2. HTML       | Markup Language (structure)        | [Open](02-HTML/)      |
+| 3. CSS        | Style Sheets (Presentation)        | [Open](03-CSS/)       |
+| 4. JavaScript | Programming Language (Client-Side) | [Open](04-JavaScript) |
 
 ### 01-emmet
 
