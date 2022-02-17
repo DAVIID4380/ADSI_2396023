@@ -1,0 +1,46 @@
+body {
+    background: linear-gradient(#ccc, #666);
+    font-family: arial;
+    color: #333;
+    height: 110vh;
+  }
+
+  main {
+      margin: 40px auto;
+      width: 950px;
+  }
+
+  main h1 {
+      background-color: #fff;
+      border-radius: 4px;
+      padding: 10px;
+      text-align: center;
+  }
+
+  main h1 a:link,
+  main h1 a:visited {
+      background-color: #333;
+      border-radius: 4px;
+      color: #fff;
+      float: left;
+      padding: 0 6px;
+      text-decoration: none;
+  }
+
+  code {
+      background-color: #333;
+      border-radius: 4px;
+      display: block;
+      color: #fff;
+      font-size: 2rem;
+      padding: 14px;
+  }
+
+  xmp {
+      background-color: rgb(117, 163, 48);
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1.4rem;
+      padding: 14px;
+
+  }

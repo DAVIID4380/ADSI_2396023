@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/01-Emmet/CSS/16-challenge.css">
+    <title>16-challenge</title>
+</head>
+
+<body>
+    <main>
+        <h1><a href="index.html">🏠</a>16-Challenge</h1>
+        <h3>Example:</h3>
+        <code>header#header>nav.navbar.navbar-inverse.navbar-fixed-top>div.container>(div.navbar-header>(button[type=button].navbar-toggle[data-toggle=collapse][data-target=navbar-collapse]>span.sr-only{toggle navigation}span.icon-bar{}*3)(a.navbar-brand[href=index.php]>img[src=imgs/logo.png][alt= ])^(div.collapse.navbar-collapse.navbar-right>(ul.nav.nabvar-collapse>(li>a[href=index.html].link{inicio})(li.active.link>a[href=login.html]{ingresar})(li>a[href=registro.html].link{registrarse})(li>a[href=contacto.html].link{contacto}))))</code>
+        <h3>Result:</h3>
+        <xmp>
+<header id="header">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                 data-toggle="collapse" data-target="navbar-collapse">
+                    <span class="sr-only">toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="index.php" class="navbar-brand">
+                    <img src="imgs/logo.png" alt="">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav nabvar-collapse">
+                    <li>
+                        <a href="index.html" class="link">inicio</a>
+                    </li>
+                    <li class="active link">
+                        <a href="login.html">ingresar</a>
+                    </li>
+                    <li>
+                        <a href="registro.html" class="link">registrarse</a>
+                    </li>
+                    <li>
+                        <a href="contacto.html" class="link">contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        </xmp>
+</body>
+
+</html>
