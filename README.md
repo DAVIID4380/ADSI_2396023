@@ -10,7 +10,7 @@
 
 | Theme         | Description                        | Links                  |
 | ------------- | ---------------------------------- | ---------------------- |
-| 1. Emmet      | Improves Workflow in HTML/CSS      | [Open](01-emmet/)      |
+| 1. Emmet      | Improves Workflow in HTML/CSS      | [Open](01-Emmet/)      |
 | 2. HTML       | Markup Language (structure)        | [Open](02-HTML/)       |
 | 3. CSS        | Style Sheets (Presentation)        | [Open](03-CSS/)        |
 | 4. JavaScript | Programming Language (Client-Side) | [Open](04-JavaScript/) |
