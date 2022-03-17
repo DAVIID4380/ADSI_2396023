@@ -1,20 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/master.css">
-    <title>04-Basic selectors</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/master.css" />
+    <title>06-Specificity</title>
+    <style>
+        /*Specificity 0,0,1 = 1*/
+      svg {
+        display: block;
+        margin: 10px auto;
+        width: 18rem;
+      }
+        /*Specificity 0,1,1 = 11*/
+      svg.icon {
+          color: yellow;
+      }
+        /*Specificity 0,1,2 = 12*/
+      section svg.icon {
+          color: slateblue;
+      }
+    </style>
+  </head>
+  <body>
     <main>
-        <header>
-            <h1><a href="index.html">🏠</a>04-Basic-selectors</h1>
-        </header>
-        <section>
-
-        </section>
+      <header>
+        <h1><a href="index.html">🏠</a>06-Specificity</h1>
+      </header>
+      <section>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon
+            " viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M4 5a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V7a2 2 0 00-2-2h-1.586a1 1 0 01-.707-.293l-1.121-1.121A2 2 0 0011.172 3H8.828a2 2 0 00-1.414.586L6.293 4.707A1 1 0 015.586 5H4zm6 9a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd" />
+            </svg>
+      </section>
     </main>
-</body>
+  </body>
 </html>

@@ -1,60 +1,43 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="CSS/master.css">
-    <title>04-Basic selectors</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/master.css" />
+    <title>10-Percentage unit</title>
     <style>
-        /*Universal- - - - - - - - - - - - - -*/
-        section * {
-            border: 1px solid slateblue;
-            padding: 10px;
+        aside,
+        article {
+            display: inline-block;
+            vertical-align: top;
+            font-size: 4rem;
+            font-weight: 500;
+            text-align: center;
+            line-height: 36rem;
+            height: 80vh;
         }
-         /*Type- - - - - - - - - - - - - -*/
-         ul {
-             list-style: none;
-         }
-         li {
-             font-size: 1.2rem;
-         }
-         /*Descending- - - - - - - - - - - - - -*/
-         ul li {
-             background-color: cadetblue;
-         }
-         /*Class- - - - - - - - - - - - - -*/
-         .upper {
-             text-transform: uppercase;
-             color: white;
-         }
-         .underline {
-             text-decoration: underline;
-         }
-         /*Identification- - - - - - - - - - - - - -*/
-         #important {
-             background-color: slateblue;
-             font-weight: 500;
-         }
-         /*Combine- - - - - - - - - - - - - -*/
-         section ul.lang-prog li#important{
-            color: tomato;
-         }
+        aside {
+            background-color: aquamarine;
+            width: 30%;
+        }
+
+        article {
+            background-color: slateblue;
+            margin-left: -5px;
+            width: 70%;
+        }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <header>
-            <h1><a href="index.html">🏠</a>04-Basic selectors</h1>
-        </header>
-        <section>
-            <ul class="lang-prog">
-                <li class="upper underline">HTML</li>
-                <li id="important">CSS</li>
-                <li>JavaScript</li>
-                <li>C#</li>
-            </ul>
-        </section>
+      <header>
+        <h1><a href="index.html">🏠</a>10-Percentage unit</h1>
+      </header>
+      <section>
+          <aside>30%</aside>
+          <article>70%</article>
+      </section>
     </main>
-</body>
+  </body>
 </html>
