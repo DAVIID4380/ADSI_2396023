@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/master.css">
+    <title>05-Advanced selectors</title>
+    <style>
+        /*Children - - - - - - - - - - - - - - */
+        p > span {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        /*Adjacent - - - - - - - - - - - - - - */
+        h2 + h3 + h3 {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+        /*Attribute - - - - - - - - - - - - - - */
+        a[target] {
+            background-color: aquamarine;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html">🏠</a>05-Advanced selectors</h1>
+        </header>
+        <section>
+            <h2>Children</h2>
+            <p>
+                <span>Paragraph One</span>
+            </p>
+            <p>
+                <i>
+                    <span>Paragraph Two</span>
+                </i>
+            </p>
+            <h2>Adjacent:</h2>
+            <h3>Lorem Ipsum Dolor</h3>
+            <h3>Lorem Ipsum Dolor</h3>
+            <h2>Attributes:</h2>
+            <a href="https://www.google.com">Go to Google</a>
+            <a href="https://www.facebook.com" target="_blank">Go to facebook</a>
+            <a href="https://www.twitter.com">Go to twitter</a>
+        </section>
+    </main>
+</body>
+</html>

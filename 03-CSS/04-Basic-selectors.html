@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/master.css">
+    <title>04-Basic selectors</title>
+    <style>
+        /*Universal- - - - - - - - - - - - - -*/
+        section * {
+            border: 1px solid slateblue;
+            padding: 10px;
+        }
+         /*Type- - - - - - - - - - - - - -*/
+         ul {
+             list-style: none;
+         }
+         li {
+             font-size: 1.2rem;
+         }
+         /*Descending- - - - - - - - - - - - - -*/
+         ul li {
+             background-color: cadetblue;
+         }
+         /*Class- - - - - - - - - - - - - -*/
+         .upper {
+             text-transform: uppercase;
+             color: white;
+         }
+         .underline {
+             text-decoration: underline;
+         }
+         /*Identification- - - - - - - - - - - - - -*/
+         #important {
+             background-color: slateblue;
+             font-weight: 500;
+         }
+         /*Combine- - - - - - - - - - - - - -*/
+         section ul.lang-prog li#important{
+            color: tomato;
+         }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html">🏠</a>04-Basic selectors</h1>
+        </header>
+        <section>
+            <ul class="lang-prog">
+                <li class="upper underline">HTML</li>
+                <li id="important">CSS</li>
+                <li>JavaScript</li>
+                <li>C#</li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
