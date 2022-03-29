@@ -7,13 +7,31 @@
     <link rel="stylesheet" href="CSS/master.css" />
     <title>16-Colors alpha</title>
     <style>
-      .color1 {
-        font-size: 1.5rem;
-        color: rgba(128, 128, 0, 1);
+      figure {
+        background: url(img/programador.png) no-repeat center;
+        background-size: contain;
+        margin: 0 auto;
+        height: 500px;
+        width: 100%;
       }
-      .color2 {
-        font-size: 1.5rem;
-        color: rgba(255, 0, 0, 1);
+      figure div {
+        background-color: #f00;
+        height: 20%;
+      }
+      figure div:nth-child(1) {
+        background-color: #00000033;
+      }
+      figure div:nth-child(2) {
+        background-color: rgba(0, 0, 0, 0.4);
+      }
+      figure div:nth-child(3) {
+        background-color: hsla(0, 0%, 0%, 0.6);
+      }
+      figure div:nth-child(4) {
+        background-color: #000000bb;
+      }
+      figure div:nth-child(5) {
+        background-color: rgba(0, 0, 0, 0.9);
       }
     </style>
   </head>
@@ -23,18 +41,13 @@
         <h1><a href="index.html">🏠</a>16-Colors alpha</h1>
       </header>
       <section>
-        <p class="color1">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-          odio error cum. Alias possimus unde ipsam voluptatum dolorem enim
-          similique quisquam iusto sit facere perspiciatis molestiae, accusamus
-          soluta voluptatibus quo!
-        </p>
-        <p class="color2">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-          quisquam eaque rem quam? Perferendis ab saepe, provident dolore cum
-          labore. Aperiam minus magni dolor debitis suscipit fugit culpa
-          provident ducimus!
-        </p>
+        <figure>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </figure>
       </section>
     </main>
   </body>
