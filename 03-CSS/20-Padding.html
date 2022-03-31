@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/master.css">
+    <title>20-Padding</title>
+    <style>
+        .bg {
+            background: linear-gradient(135deg, #ff000099 10%,
+                                        transparent 0,
+                                        transparent 50%,
+                                        #ff000099 0,
+                                        #ff000099 60%,
+                                         transparent 0,
+                                         transparent);
+            background-size: 7.07px 7.07px;
+        }
+        section {
+            position: relative;
+        }
+        div.parent {
+            position: absolute;
+            height: 340px;
+            width: 380px;
+            left: 50%;
+            transform: translate(-50%);
+        }
+        div.child {
+            height: 200px;
+            width: 200px;
+            font-size: 4rem;
+            text-align: center;
+            line-height: 12rem;
+            margin: 70px auto;
+            /* -------------- */
+            padding-left: 50px;
+            /* Shorthand*/
+            padding: 0 0 0 50px;
+            width: 200px;
+        }
+        div.child span {
+            background-color: #fff;
+            /* Axis X & Y */
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;
+            /* Shorthand: Padding: top right bottom left*/
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html">🏠</a>20-Padding</h1>
+        </header>
+        <section>
+            <div class="parent">
+                <div class="child bg">
+                    <span>
+                        BOX
+                    </span>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
