@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/master.css">
+        <title>37-Z index</title>
+        <style>
+            section div.animals div {
+                border: 2px solid #666;
+                font-size: 4rem;
+                height: 100px;
+                text-align: center;
+                position: relative;
+                width: 160px;
+            }
+            section div.animals {
+                margin: 20px auto;
+                width: 200px;
+            }
+            section div.box1 {
+                background-color: #17193b;
+                z-index: 4;
+            }
+            section div.box2 {
+                background-color: #1f2280;
+                top: -50px;
+                left: 50px;
+                z-index: 3;
+            }
+            section div.box3 {
+                background-color: #3941e2;
+                top: -100px;
+                left: 100px;
+                z-index: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><a href="index.html">🏠</a>37-Z index</h1>
+            </header>
+            <section>
+                <div class="animals">
+                    <div class="box1">🥝</div>
+                    <div class="box2">🍉</div>
+                    <div class="box3">🍓</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html> 

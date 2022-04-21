@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/master.css">
+        <title>36-Overflow</title>
+        <style>
+            article {
+                border: 2px solid #666;
+                height: 220px;
+                margin: 0 auto 88px auto;
+                width: 280px;
+            }
+            article h2 {
+                text-align: center;
+            }
+            article p {
+                text-align: justify;
+                padding: 10px;
+            }
+            .art01 {
+                overflow: visible;
+            }
+            .art02 {
+                overflow: hidden;
+            }
+            .art03 {
+                overflow-y: scroll;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><a href="index.html">🏠</a>36-Overflow</h1>
+            </header>
+            <section>
+                <article class="art01">
+                    <h2>Overflow: visible</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, atque at praesentium pariatur assumenda ab doloremque laborum porro aperiam reprehenderit vitae ipsam fugit nihil suscipit! Delectus nam pariatur tempore voluptatum?
+                    </p>
+                </article>
+                <article class="art02">
+                    <h2>Overflow: hidden</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, atque at praesentium pariatur assumenda ab doloremque laborum porro aperiam reprehenderit vitae ipsam fugit nihil suscipit! Delectus nam pariatur tempore voluptatum?
+                    </p>
+                </article>
+                <article class="art03">
+                    <h2>Overflow: scroll</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, atque at praesentium pariatur assumenda ab doloremque laborum porro aperiam reprehenderit vitae ipsam fugit nihil suscipit! Delectus nam pariatur tempore voluptatum?
+                    </p>
+                </article>
+            </section>
+        </main>
+    </body>
+</html> 

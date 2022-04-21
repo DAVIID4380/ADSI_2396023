@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/master.css">
+        <title>33-Position Float</title>
+        <style>
+            div.parentbox,
+            div.parentbox div {
+                border: 2px solid #666;
+                padding: 10px;
+            }
+            div.parentbox {
+                margin: 0 auto;
+                position: relative;
+                width: 360px;
+            }
+            div.parentbox div {
+                background-color: #fff5;
+                font-size: 4rem;
+                height: 76px;
+                line-height: 4.3rem;
+                margin: 8px;
+                text-align: center;
+                width: 74px;
+            }
+            div.parentbox div.box1 {
+                background-color: #f005;
+                float: right;
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1><a href="index.html">🏠</a>33-Position Float</h1>
+            </header>
+            <section>
+                <div class="parentbox">
+                    <div class="box1">🥝</div>
+                    <div class="box2">🍉</div>
+                    <div class="box3">🍓</div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html> 
