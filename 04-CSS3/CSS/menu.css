@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+body {
+  background: url(/04-CSS3/img/bgcss3.png) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+main {
+  margin: 2rem auto;
+  width: 32rem;
+}
+
+header h1 {
+  border-radius: 8px;
+  border-bottom: 4px solid #0170ba;
+  background-color: #ffffff66;
+  color: #333;
+  padding: 2rem;
+  font-weight: 500;
+  text-align: center;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a:link,
+nav li a:visited {
+  background-color: #00000066;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  align-items: center;
+  padding: 0.4rem;
+  border-radius: 8px;
+  transition: all 0.2s ease-in;
+}
+
+nav li a:active {
+  transform: scale(0.8);
+}
+
+nav li a i {
+  background-color: #00c3ff;
+  color: #000000e0;
+  padding: 0.8rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  font-style: normal;
+  margin-right: 0.8rem;
+  text-align: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  transition: all 0.2s 0.2s ease-in;
+}
+
+nav li a:hover {
+  background-color: #000000ce;
+  color: #0170ba;
+}
+
+nav li a:hover i {
+  transform: scale(1.25);
+  color: #fff;
+}
