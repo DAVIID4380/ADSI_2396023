@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/master.css">
+    <title>08-Bg gradient</title>
+    <style>
+        div.box {
+            border: 2px solid #333;
+            height: 200px;
+        }
+        div.box1 {
+            background: linear-gradient(to top, #f00, #000);
+        }
+        div.box2 {
+            background: linear-gradient(45deg, #f00, #02ff0e);
+        }
+        div.box3 {
+            background: linear-gradient(to bottom, #cc0 50%, #00c 50% 75%, #c00 0);
+        }
+        div.box4 {
+            background: linear-gradient(to right, #f00 50%, #000 0);
+            background-size: 50px 100px;
+        }
+        div.box5 {
+            background: radial-gradient(circle, #00aeff, #f00);
+        }
+        div.box6 {
+            background: radial-gradient(circle, #fff 20%, #000 20% 40%, #fff 40% 60%, #000 60% 80%, #fff 80%);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1><a href="index.html">⇠</a>08-bg gradient</h1>
+        </header>
+        <section>
+            <h3>linear-gradient(to top, color1, color2)</h3>
+            <div class="box box1"></div>
+
+            <h3>linear-gradient(45deg, color1, color2)</h3>
+            <div class="box box2"></div>
+
+            <h3>Colombia flag</h3>
+            <div class="box box3"></div>
+
+            <h3>Vertical lines</h3>
+            <div class="box box4"></div>
+
+            <h3>radial-gradient(circle, color1, color2)</h3>
+            <div class="box box5"></div>
+
+            <h3>Bulleye</h3>
+            <div class="box box6"></div>
+        </section>
+    </main>
+</body>
+</html>
