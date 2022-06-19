@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    background-color: #f4fcf4;
+}
+div.title {
+    background: url(../img/Gow-titulo.png) no-repeat center;
+    background-size: contain;
+    height: 200px;
+    margin: 0 auto;
+    max-width: 1000px;
+}
+@media (max-width: 600px) {
+    div.title{
+        background: url(../img/Gow-titulo2.jpg) no-repeat center;
+        background-size: cover;
+        height: 220px;
+        margin: 10px auto;
+        width: 300px;
+    }
+}
+div.gallery {
+    height: 220px;
+    margin: 20px auto;
+    width: 1024px;
+}
+div.gallery div{
+    display: inline-block;
+    height: 220px;
+    margin: 0 16px;
+    position: relative;
+    width: 220px;
+}
+div.GowII {
+    background: url(../img/Gow-II.jpg) no-repeat center;
+    background-size: cover;
+}
+div.GowIII {
+    background: url(../img/Gow-III.jpg) no-repeat center;
+    background-size: cover;
+}
+div.GowAscension {
+    background: url(../img/Gow-Ascension.jpg) no-repeat center;
+    background-size: cover;
+}
+div.GowIV {
+    background: url(../img/Gow-IV.jpg) no-repeat center;
+    background-size: cover;
+}
+div.gallery h3 {
+    background-color: #000c;
+    bottom: 0;
+    color: #fff9;
+    font-weight: 300;
+    height: 30px;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    width: 220px;
+}
+div.gallery div:hover {
+    cursor: pointer;
+}
+div.gallery div:hover h3{
+    color: #fff;
+    cursor: pointer;
+    height: 50px;
+    transition: all 0.5s;  
+}
+@media (max-width: 1024px) {
+    div.gallery {
+        height: 447px;
+        margin: 0 auto;
+        width: 485px;
+    }
+    div.gallery div {
+        height: 220px;
+        margin: 10px 10px;
+        width: 220px;
+    }
+}
+@media (max-width: 600px) {
+    div.gallery{
+        height: 938px;
+        margin: 0 auto;
+        width: 220px;
+    }
+    div.gallery div {
+        height: 220px;
+        margin: 5px auto;
+        width: 220px;
+    }
+}
