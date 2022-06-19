@@ -16,7 +16,7 @@ div.title {
 }
 @media (max-width: 600px) {
     div.title{
-        background: url(../img/Gow-titulo2.jpg) no-repeat center;
+        background: url(../img/Gow-titulo2.png) no-repeat center;
         background-size: cover;
         height: 220px;
         margin: 10px auto;
@@ -93,5 +93,101 @@ div.gallery div:hover h3{
         height: 220px;
         margin: 5px auto;
         width: 220px;
+    }
+}
+div.info {
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    min-height: 500px;
+    margin: 70px auto;
+    width: 1000px;
+}
+div.txt {
+    background-color: #fff;
+    border: 1px solid #a8a8a8;
+    border-top: 5px solid #be1e1e;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 30px 10px;
+}
+div.info figure {
+    float: left;
+    height: 220px;
+    margin: 0 auto;
+    margin-right: 10px;
+    width: 220px;
+}
+div.info figure.Ares {
+    background: url(../img/Ares.jpg) no-repeat center;
+    background-size: cover;
+}
+div.info figure.Zeus {
+    background: url(../img/Zeus.jpg) no-repeat center;
+    background-size: cover;
+}
+div.info p {
+    margin-right: 10px;
+    text-align: justify;
+}
+div.developer {
+    color: #a8a8a877;
+    height: 40px;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1000px;
+}
+@media (max-width: 1024px) {
+    div.info {
+        margin: 70px auto;
+        width: 466px;
+    }
+    div.info div.txt {
+        height: 200px;
+    }
+    div.info figure {
+        height: 200px;
+        width: 200px;
+    }
+    div.info h2 {
+        margin-top: 0;
+    }
+    div.info p {
+        font-size: 0.8rem;
+        height: 160px;
+        margin-top: -15px;
+        overflow-y: scroll;
+        padding-right: 5px;
+        text-align: justify;
+    }
+}
+@media (max-width: 600px){
+    div.info {
+        margin: 70px auto;
+        max-width: 230px;
+    }
+    div.info div.txt {
+        border: none;
+        min-height: 410px;
+        width: auto;
+    }
+    div.info figure {
+        float: top;
+        height: 200px;
+        margin: 0 5px;
+        margin-top: 10px;
+        width: 200px;
+    }
+    div.info h2 {
+        margin-top: 0;
+        margin: 0 auto;
+    }
+    div.info p {
+        font-size: 0.8rem;
+        height: 160px;
+        margin: 0 auto;
+        margin-top: 2px;
+        overflow-y: scroll;
+        padding-right: 5px;
+        text-align: justify;
     }
 }
