@@ -5,41 +5,73 @@ html(lang="en")
         meta(http-equiv="X-UA-Compatible", content="IE=edge")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         title Main Menu (PUG)
+        style.
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+            body {
+                font-family: Poppins, sans;
+                color: #fff;
+                padding: 0;
+                background: #252d40 url(img/pug.jpg) no-repeat center;
+                background-size: contain;
+                min-height: 100vh;
+            }
+            ul.links {
+                display: flex;
+                flex-direction: column;
+                padding: 0;
+                margin: 0;
+                gap: 10px;
+            }
+            ul.links li a:link,
+            ul.links li a:visited {
+                background-color: #ffffff11;
+                border: 1px solid #ffffffcc;
+                display: flex;
+                border-radius: 20px;
+                color: #fff;
+                padding: 4px 16px;
+                text-decoration: none;
+                transition: all 0.2s ease-in;
+                width: 200px;
+            }
+            ul.links li a:hover {
+                background-color: #ffffff66;
+            }
     body 
         h1 Main Menu (PUG)
         ul.links
             li
-                a(href='01-document.html') 01-Document
+                a(href='html/01-document.html', target='_blank') 01-Document
             li
-                a(href='02-attributes.html') 02-Attributes
+                a(href='html/02-attributes.html', target='_blank') 02-Attributes
             li
-                a(href='03-style-attr.html') 03-Style attr
+                a(href='html/03-style-attr.html', target='_blank') 03-Style attr
             li
-                a(href='04-variables-attr.html') 04-Variables attr
+                a(href='html/04-variables-attr.html', target='_blank') 04-Variables attr
             li
-                a(href='05-literal-attr.html') 05-Literal attr
+                a(href='html/05-literal-attr.html', target='_blank') 05-Literal attr
             li
-                a(href='06-css.html') 06-CSS
+                a(href='html/06-css.html', target='_blank') 06-CSS
             li
-                a(href='07-javascript.html') 07-Javascript
+                a(href='html/07-javascript.html', target='_blank') 07-Javascript
             li
-                a(href='08-cases.html') 08-Cases
+                a(href='html/08-cases.html', target='_blank') 08-Cases
             li
-                a(href='09-for-loop.html') 09-For loop
+                a(href='html/09-for-loop.html', target='_blank') 09-For loop
             li
-                a(href='10-comments.html') 10-Comments
+                a(href='html/10-comments.html', target='_blank') 10-Comments
             li
-                a(href='11-conditionals.html') 11-Conditionals
+                a(href='html/11-conditionals.html', target='_blank') 11-Conditionals
             li
-                a(href='12-include.html') 12-Include
+                a(href='html/12-include.html', target='_blank') 12-Include
             li
-                a(href='13-include-text.html') 13-Include text
+                a(href='html/13-include-text.html', target='_blank') 13-Include text
             li
-                a(href='14-inheritance.html') 14-Inheritance
+                a(href='html/14-inheritance.html', target='_blank') 14-Inheritance
             li
-                a(href='15-iterations.html') 15-Iterations
+                a(href='html/15-iterations.html', target='_blank') 15-Iterations
             li
-                a(href='16-mixin.html') 16-Mixin
+                a(href='html/16-mixin.html', target='_blank') 16-Mixin
             li
-                a(href='17-challenge.html') 17-Challenge
+                a(href='html/17-challenge.html', target='_blank') 17-Challenge
             
