@@ -1,0 +1,20 @@
+body {
+  background: linear-gradient(90deg, #7bed9f, #3498db);
+}
+
+section {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+section h1 {
+  font-size: 46px;
+  text-align: center;
+}
+
+section p {
+  font-size: 26px;
+  text-align: center;
+}
+
+/* burger */

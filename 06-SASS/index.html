@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Menu (SASS-SCSS)</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+      body {
+          font-family: Poppins, sans;
+          color: #fff;
+          padding: 0;
+          background: #b92b7f url(img/sassFondo.jpg) no-repeat center;
+          background-size: cover;
+          min-height: 100vh;
+      }
+      ul.links {
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+          gap: 10px;
+      }
+      ul.links li a:link,
+      ul.links li a:visited {
+          background-color: #ffffff11;
+          border: 1px solid #ffffffcc;
+          display: flex;
+          border-radius: 20px;
+          color: #fff;
+          padding: 4px 16px;
+          text-decoration: none;
+          transition: all 0.2s ease-in;
+          width: 200px;
+      }
+      ul.links li a:hover {
+          background-color: #ffffff66;
+      }
+    </style>
+  </head>
+  <body> 
+    <h1>Main Menu (SASS-SCSS)</h1>
+    <ul class="links">
+      <li><a href="01-nest.html" target="_blank">01-nest</a></li>
+      <li><a href="02-parent.html" target="_blank">02-parent</a></li>
+      <li><a href="03-comments.html" target="_blank">03-comments</a></li>
+      <li><a href="04-variables.html" target="_blank">04-variables</a></li>
+      <li><a href="05-import.html" target="_blank">05-import</a></li>
+      <li><a href="06-inheritance.html" target="_blank">06-inheritance</a></li>
+      <li><a href="07-conditionals.html" target="_blank">07-conditionals</a></li>
+      <li><a href="08-loops.html" target="_blank">08-loops</a></li>
+      <li><a href="09-mixins.html" target="_blank">09-mixins</a></li>
+      <li><a href="10-challenge-menuburger.html" target="_blank">10-challenge menuburger</a></li>
+    </ul>
+  </body>
+</html>
