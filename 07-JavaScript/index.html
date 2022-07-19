@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <title>07-JavaScript</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Main Menu (JavaScript)</h1>
+            <nav class="menu">
+
+            </nav>
+        </header>
+    </main>
+    <script>
+        const menu = document.querySelector('.menu')
+        const links = [
+            {
+                url: '01-write.html',
+                text: 'Write'
+            },
+            {
+                url: '02-comments.html',
+                text: 'Comments'
+            },
+            {
+                url: '03-get-elements.html',
+                text: 'Get Elements'
+            },
+            {
+                url: '04-variables.html',
+                text: 'Variables'
+            },
+            {
+                url: '05-methods-object.html',
+                text: 'Methods Object'
+            },
+            {
+                url: '06-types-objects.html',
+                text: 'Types Objects'
+            },
+            {
+                url: '07-vehicle-object.html',
+                text: 'Vehicle Object'
+            },
+            {
+                url: '08-functions.html',
+                text: 'Functions'
+            },
+            {
+                url: '09-challenge-calculator.html',
+                text: 'Challenge Calculator'
+            },
+            {
+                url: '10-operators-arithmetic.html',
+                text: 'Operators Arithmetic'
+            },
+            {
+                url: '11-operators-assignment.html',
+                text: 'Operators Assignment'
+            },
+            {
+                url: '12-operators-comparison.html',
+                text: 'Operators Comparison'
+            },
+            {
+                url: '13-operators-logical.html',
+                text: 'Operators Logical'
+            },
+            {
+                url: '14-conditionals.html',
+                text: 'Conditionals'
+            },
+            {
+                url: '15-challenge-conditionals.html',
+                text: 'Challenge Conditionals'
+            },
+            {
+                url: '16-loops.html',
+                text: 'Loops'
+            },
+            {
+                url: '17-pokedex-api.html',
+                text: 'Pokedex Api'
+            },
+            {
+                url: '18-events.html',
+                text: 'Events'
+            },
+            {
+                url: '19-methods-strings.html',
+                text: 'Methods Strings'
+            },
+            {
+                url: '20-methods-numbers.html',
+                text: 'Methods Numbers'
+            },
+            {
+                url: '21-methods-mathematics.html',
+                text: 'Methods Mathematics'
+            },
+            {
+                url: '22-challenge-baloto.html',
+                text: 'Challenge Baloto'
+            },
+            {
+                url: '23-methods-dates.html',
+                text: 'Methods Dates'
+            },
+            {
+                url: '24-methods-arrays.html',
+                text: 'Methods Arrays'
+            },
+            {
+                url: '25-challenge-arrays.html',
+                text: 'Challenge Arrays'
+            },
+            {
+                url: '26-events-time.html',
+                text: 'Events Time'
+            },
+            {
+                url: '27-challenge-events-time.html',
+                text: 'Challenge Events Time'
+            },
+            {
+                url: '28-pop-up-windows.html',
+                text: 'Pop Up Windows'
+            },
+        ]
+        links.forEach(function (item, index) {
+            menu.innerHTML += `<li><a href='${item.url}'> <i> ${index+1} </i> ${item.text} </a></li>`
+        })
+    </script>
+</body>
+</html>
