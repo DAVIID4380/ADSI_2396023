@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <title>Class Vehicle</title>
+    <style>
+        main {
+            background: url(img/vehicles/bg.svg) no-repeat;
+        }
+        section button.btn_dark {
+            background: url(img/vehicles/Btn-dark.svg);
+            border: none;
+            cursor: pointer;
+            height: 66px;
+            position: absolute;
+            top: -72px;
+            width: 62px;
+            transition: transform 0.2s ease-in;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+                      </svg>
+                </a>
+                <small>Class</small>Vehicle
+            </h1>
+        </header>
+        <section>
+            <button class="btn_dark"></button>
+        </section>
+    </main>
+    <script>
+        const vehicles = [
+            {
+                brand: 'Ferrari',
+                refer: '599 GTB Fiorano',
+                model: 2012,
+                color: 'Rojo',
+                image: 'img/vehicles/Ferrari-car-599.png'
+            },
+            {
+                brand: 'Ford',
+                refer: 'Ranger Lariat',
+                model: 2022,
+                color: 'Negro',
+                image: 'img/vehicles/ford-lariat.png'
+            },
+            {
+                brand: 'Reanult',
+                refer: 'Clio',
+                model: 2018,
+                color: 'Plateado',
+                image: 'img/vehicles/car-clio.png'
+            }
+        ]
+
+        class vehicle {
+            constructor(brand, refer, model, color, image) {
+                this.brand = brand
+                this.refer = refer
+                this.model = model
+                this.color = color
+                this.image = image
+            }
+            getInfo() {
+                return `The brand is: ${this.brand}`
+            }
+        }
+    </script>
+</body>
+</html>
