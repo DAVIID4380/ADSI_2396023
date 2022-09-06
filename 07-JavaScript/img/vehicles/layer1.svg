@@ -1,23 +1,17 @@
 <svg width="704" height="245" viewBox="0 0 704 245" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g clip-path="url(#clip0_50_34)">
-<rect y="171" width="365" height="75" fill="#698390"/>
-<rect x="28" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="112" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="196" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="280" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect y="171" width="365" height="11" fill="#4F6572"/>
-<rect y="235" width="365" height="11" fill="#4F6572"/>
-<rect x="365" y="171" width="365" height="75" fill="#698390"/>
-<rect x="372" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="456" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="540" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="624" y="207" width="60" height="4" fill="#D9D9D9"/>
-<rect x="365" y="171" width="365" height="11" fill="#4F6572"/>
-<rect x="365" y="235" width="365" height="11" fill="#4F6572"/>
-</g>
-<defs>
-<clipPath id="clip0_50_34">
-<rect width="704" height="245" fill="white"/>
-</clipPath>
-</defs>
+<rect y="170.305" width="365" height="74.6951" fill="#698390"/>
+<rect x="28" y="206.159" width="60" height="3.98374" fill="#D9D9D9"/>
+<rect x="112" y="206.159" width="60" height="3.98374" fill="#D9D9D9"/>
+<rect x="196" y="206.159" width="60" height="3.98374" fill="#D9D9D9"/>
+<rect x="280" y="206.159" width="60" height="3.98374" fill="#D9D9D9"/>
+<rect y="170.305" width="365" height="10.9553" fill="#4F6572"/>
+<rect y="234" width="365" height="11" fill="#4F6572"/>
+<rect x="364.015" y="170" width="339.985" height="75" fill="#698390"/>
+<rect x="370.688" y="206.159" width="55.8516" height="3.98374" fill="#D9D9D9"/>
+<rect x="448.88" y="206.159" width="55.8516" height="3.98374" fill="#D9D9D9"/>
+<rect x="527.072" y="206.159" width="55.8516" height="3.98374" fill="#D9D9D9"/>
+<rect x="605.264" y="206.159" width="55.8516" height="3.98374" fill="#D9D9D9"/>
+<rect x="359" y="170" width="345" height="11" fill="#4F6572"/>
+<rect x="362.75" y="234" width="341.25" height="11" fill="#4F6572"/>
+<rect x="681.033" y="206.159" width="22.9674" height="3.98374" fill="#D9D9D9"/>
 </svg>

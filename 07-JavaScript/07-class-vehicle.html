@@ -75,6 +75,18 @@
         main.dark div.methods button.off.active {
             background: url(img/vehicles/off1.svg) no-repeat center;
         }
+        main.dark figure.parallax div.layer1 {
+            background: url(img/vehicles/layer1-dark.svg) repeat-x;
+        }
+        main.dark figure.parallax div.layer2 {
+            background: url(img/vehicles/layer2-dark.svg) repeat-x;
+        }
+        main.dark figure.parallax div.layer3 {
+            background: url(img/vehicles/layer3-dark.svg) repeat-x;
+        }
+        main.dark figure.parallax div.layer4 {
+            background: url(img/vehicles/layer4.png) repeat-x;
+        }
 
         /*Light mode*/
         main {
@@ -319,6 +331,12 @@
         figure.parallax.play.stop div.layer4 {
             animation-play-state: paused;
         }
+        figure.parallax.reverse div.layer1,
+        figure.parallax.reverse div.layer2,
+        figure.parallax.reverse div.layer3,
+        figure.parallax.reverse div.layer4 {
+            animation-direction: reverse;
+        }
     </style>
 </head>
 <body>
@@ -447,6 +465,13 @@
             }
             static goForward() {
                 parallax.classList.add('play')
+                parallax.classList.remove('reverse')
+                parallax.classList.remove('stop')
+                moveon = true
+            }
+            static goBackward() {
+                parallax.classList.add('play')
+                parallax.classList.add('reverse')
                 parallax.classList.remove('stop')
                 moveon = true
             }
@@ -484,8 +509,11 @@
             }
         })
         btn_bw.addEventListener('click', (event) => {
+            if (engine && !moveon) {
             removeActives()
+            Vehicle.goBackward()
             btn_bw.classList.add('active')
+            }
         })
         btn_off.addEventListener('click', (event) => {
             if (engine && !moveon) {
