@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/menu.css">
+    <title>Calculator</title>
+    <style>
+        main {
+            background: url(img/calculator/bg-dark.svg) no-repeat center;
+            height: 680px;
+            width: 416px;
+        }
+        header h1 a:is(:link) {
+            color: #B60000;
+            margin-top: -20px;
+        }
+        header button.mode {
+            border: none;
+            background: url(img/calculator/mode.svg) no-repeat center;
+            height: 40px;
+            display: block;
+            margin: 0 auto;
+            margin-top: -50px;
+            transition: all 0.2s ease-in;
+            width: 100px;
+        }
+        header button.mode:is(:hover) {
+            cursor: pointer;
+            transform: scale(1.05);
+        }
+        div.display {
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+        }
+        div.display output.operation {
+            font-weight: 275;
+            font-size: 24px;
+            color: #6E768A;
+        }
+        div.display output.result {
+            font-weight: 275;
+            font-size: 48px;
+            color: #B6B9C7;
+        }
+        div.buttons {
+            display: grid;
+            gap: 14px;
+            margin-top: 10px;
+            justify-content: center;
+            grid-template-columns: repeat(4, 81px);
+            grid-template-rows: repeat(5, 81px);
+        }
+        div.buttons button {
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease-in;
+        }
+        div.buttons button.clear {
+            background: url(img/calculator/C.svg) no-repeat center;
+        }
+        div.buttons button.back {
+            background: url(img/calculator/\(\ \).svg) no-repeat center;
+        }
+        div.buttons button.pow {
+            background: url(img/calculator/^.svg) no-repeat center;
+        }
+        div.buttons button.div {
+            background: url(img/calculator/÷.svg) no-repeat center;
+        }
+        div.buttons button:is(:hover) {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <h1>
+                <a href="index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M11 15l-3-3m0 0l3-3m-3 3h8M3 12a9 9 0 1118 0 9 9 0 01-18 0z" />
+                      </svg>
+                </a>
+                
+            </h1>
+            <button class="mode"></button>
+        </header>
+        <section>
+            <div class="display">
+                <output class="operation">124.500+106.904</output>
+                <output class="result">231.404</output>
+            </div>
+            <div class="buttons">
+                <button class="clear"></button>
+                <button class="back"></button>
+                <button class="pow"></button>
+                <button class="div"></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+                <button class=""></button>
+            </div>
+        </section>
+    </main>
+    <script>
+    </script>
+</body>
+</html>
