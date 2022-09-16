@@ -39,11 +39,17 @@
             font-weight: 275;
             font-size: 24px;
             color: #6E768A;
+            height: 24px;
+            margin-bottom: 20px;
+            border: 2px solid red;
         }
         div.display output.result {
             font-weight: 275;
             font-size: 48px;
             color: #B6B9C7;
+            height: 48px;
+            margin-bottom: 10px;
+            border: 2px solid red;
         }
         div.buttons {
             display: grid;
@@ -61,8 +67,8 @@
         div.buttons button.clear {
             background: url(img/calculator/C.svg) no-repeat center;
         }
-        div.buttons button.parenthesis {
-            background: url(img/calculator/\(\ \).svg) no-repeat center;
+        div.buttons button.back {
+            background: url(img/calculator/back.svg) no-repeat center;
         }
         div.buttons button.pow {
             background: url(img/calculator/^.svg) no-repeat center;
@@ -121,6 +127,12 @@
         div.buttons button:is(:hover) {
             transform: scale(1.1);
         }
+
+        /* Light mode */
+        main.light  {
+            background: url(img/calculator/Calculator-light.svg) no-repeat center;
+        }
+        
     </style>
 </head>
 <body>
@@ -138,34 +150,74 @@
         </header>
         <section>
             <div class="display">
-                <output class="operation">124.500+106.904</output>
-                <output class="result">231.404</output>
+                <output class="operation"></output>
+                <output class="result"></output>
             </div>
             <div class="buttons">
                 <button class="clear"></button>
-                <button class="parenthesis"></button>
-                <button class="pow"></button>
-                <button class="div"></button>
-                <button class="seven"></button>
-                <button class="eight"></button>
-                <button class="nine"></button>
-                <button class="x"></button>
-                <button class="four"></button>
-                <button class="five"></button>
-                <button class="six"></button>
-                <button class="rest"></button>
-                <button class="one"></button>
-                <button class="two"></button>
-                <button class="three"></button>
-                <button class="plus"></button>
-                <button class="percentage"></button>
-                <button class="zero"></button>
-                <button class="point"></button>
+                <button class="back"></button>
+                <button class="pow"        data-opr="**"></button>
+                <button class="div"        data-opr="/"></button>
+                <button class="seven"      data-num="7"></button>
+                <button class="eight"      data-num="8"></button>
+                <button class="nine"       data-num="9"></button>
+                <button class="x"          data-opr="*"></button>
+                <button class="four"       data-num="4"></button>
+                <button class="five"       data-num="5"></button>
+                <button class="six"        data-num="6"></button>
+                <button class="rest"       data-opr="-"></button>
+                <button class="one"        data-num="1"></button>
+                <button class="two"        data-num="2"></button>
+                <button class="three"      data-num="3"></button>
+                <button class="plus"       data-opr="+"></button>
+                <button class="percentage" data-opr="%"></button>
+                <button class="zero"       data-num="0"></button>
+                <button class="point"      data-opr="."></button>
                 <button class="equal"></button>
             </div>
         </section>
     </main>
     <script>
+        // Consts
+        const main = document.querySelector('main')
+        const btn_mode = document.querySelector('.mode')
+        
+        const oprt = document.querySelector('.operation')
+        const result = document.querySelector('.equal')
+        const clear = document.querySelector('.clear')
+        const back = document.querySelector('.back')
+
+        const nums = document.querySelectorAll('button[data-num]')
+        const oprs = document.querySelectorAll('button[data-opr]')
+
+        // Logic operator
+        var operStatus = false
+
+        // Click buttons
+        nums.forEach(element => {
+            element.addEventListener('click', () => {
+                if(oprt.textContent.length < 18) {
+                    oprt.textContent += element.getAttribute(data-num)
+                    oprtStatus = true
+                }
+            })
+        })
+
+        oprs.forEach(element => {
+            element.addEventListener('click', () => {
+                if(oprt.textContent.length < 18) {
+                    if (oprtStatus) {
+                    oprt.textContent += element.getAttribute('data-opr')
+                    oprtStatus = false
+                    }
+                } 
+            })
+        })
+        
+        // Actions
+        btn_mode.addEventListener('click', event => {
+            main.classList.toggle('light')
+        })
     </script>
 </body>
 </html>
