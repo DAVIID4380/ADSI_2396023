@@ -23,6 +23,7 @@
             display: block;
             margin: 0 auto;
             margin-top: -50px;
+            padding: 0;
             transition: all 0.2s ease-in;
             width: 100px;
         }
@@ -41,7 +42,6 @@
             color: #6E768A;
             height: 24px;
             margin-bottom: 20px;
-            border: 2px solid red;
         }
         div.display output.result {
             font-weight: 275;
@@ -49,12 +49,11 @@
             color: #B6B9C7;
             height: 48px;
             margin-bottom: 10px;
-            border: 2px solid red;
         }
         div.buttons {
             display: grid;
             gap: 14px;
-            margin-top: 10px;
+            margin-top: 20px;
             justify-content: center;
             grid-template-columns: repeat(4, 81px);
             grid-template-rows: repeat(5, 81px);
@@ -178,46 +177,180 @@
         </section>
     </main>
     <script>
-        // Consts
-        const main = document.querySelector('main')
-        const btn_mode = document.querySelector('.mode')
-        
-        const oprt = document.querySelector('.operation')
-        const result = document.querySelector('.equal')
-        const clear = document.querySelector('.clear')
-        const back = document.querySelector('.back')
+        const main          = document.querySelector('main')
+        const btn_mode      = document.querySelector('.mode')
 
-        const nums = document.querySelectorAll('button[data-num]')
-        const oprs = document.querySelectorAll('button[data-opr]')
+        const display       = document.querySelector('output.operation')
+        const display_opr   = document.querySelector('output.result')
 
-        // Logic operator
+        const btnClear      = document.querySelector('button.clear')
+        const btnBack       = document.querySelector('button.back')
+        const btnIqual      = document.querySelector('button.equal')
+
+        const btnsNumbers   = document.querySelectorAll('button[data-num]')
+        const btnsOperators = document.querySelectorAll('button[data-opr]')
+
         var operStatus = false
 
-        // Click buttons
-        nums.forEach(element => {
-            element.addEventListener('click', () => {
-                if(oprt.textContent.length < 18) {
-                    oprt.textContent += element.getAttribute(data-num)
-                    oprtStatus = true
-                }
-            })
-        })
+        for (let i = 0; i < btnsNumbers.length; i++) {
+            btnsNumbers[i].onclick = function() {
+                operStatus = true
+                addToDisplay(this.getAttribute('data-num'))
+            }  
+        }
+        for (let i = 0; i <btnsOperators.length; i++) {
+           btnsOperators[i].onclick = function() {
+                if(operStatus){
+                addToDisplay(this.getAttribute('data-opr'))
+                operStatus = false
 
-        oprs.forEach(element => {
-            element.addEventListener('click', () => {
-                if(oprt.textContent.length < 18) {
-                    if (oprtStatus) {
-                    oprt.textContent += element.getAttribute('data-opr')
-                    oprtStatus = false
-                    }
-                } 
-            })
-        })
-        
-        // Actions
-        btn_mode.addEventListener('click', event => {
+                }
+            }  
+        }
+
+       //Events
+       btn_mode.addEventListener('click', evnt => {
             main.classList.toggle('light')
         })
+       document.onkeyup = (evt) => {
+            switch (evt.keyCode) {
+                case 8: 
+                    deleteLastValue()
+                    break;
+                case 46: 
+                    clearDisplay()
+                    break;
+                case 96:
+                case 48:
+                    addToDisplay(0)
+                    break;
+                case 97:
+                case 49:
+                    addToDisplay(1)
+                    break;
+                case 98:
+                case 50:
+                    addToDisplay(2)
+                    break;
+                case 99:
+                case 51:
+                    addToDisplay(3)
+                    break;
+                case 100:
+                case 52:
+                    addToDisplay(4)
+                    break;
+                case 101:
+                case 53:
+                    if (evt.shiftKey) {
+                        addToDisplay('%')
+                    }else{
+                    addToDisplay(5)
+                    }
+                    break;
+                case 102:
+                case 54:
+                    addToDisplay(6)
+                    break;
+                case 103:
+                case 55:
+                    if(evt.shiftKey){
+                        addToDisplay('/')
+                    }else{
+                    addToDisplay(7)
+                    }
+                    break;
+                case 111: 
+                    addToDisplay('/')
+                    break;
+                case 104:
+                case 56:
+                    addToDisplay(8)
+                    break;
+                case 105:
+                case 57:
+                    addToDisplay(9)
+                    break;
+                case 67:
+                    clearDisplay()
+                    break;
+                case 106:
+                    addToDisplay('*')
+                    break;
+                case 187: 
+                case 107:
+                    if(evt.shiftKey){
+                        addToDisplay('*')
+                    } else{
+                        addToDisplay('+')
+                    }
+                    break;
+                case 190:
+                case 110:
+                    addToDisplay('.')
+                    break;
+                
+                default:
+                    break;
+                case 222:
+                    if (evt.ctrlKey && evt.altKey) {
+                        addToDisplay('^')
+                    }
+                    break;
+                case 189: 
+                case 109:
+                    addToDisplay('-')
+                    break;
+                case 13: 
+                    btnIqual.onclick()
+                    break;
+                
+            }
+
+        }
+        btnClear.onclick = () => {
+            clearDisplay()
+        }
+        btnBack.onclick = () => {
+            deleteLastValue()
+        }
+        btnIqual.onclick = () => {
+            var operation = display.value;
+            if (operation.trim() != '') {
+                operation = operation.replace('^', '**');
+                operation = eval(operation)
+                display_opr.value = operation
+            }
+        }
+
+        // Functions
+        function deleteLastValue(){
+            display_opr.value = ''
+            display.value = display.value.slice(0, -1)
+            if (isNaN(display.value.slice(-1))){
+                operStatus = false
+            } else {
+                operStatus = true
+            }
+        }
+        function clearDisplay(){
+            display.value = ''
+            display_opr.value = ''
+            operStatus = false
+        }
+    
+        function addToDisplay(c) {
+            if(validateLength()){
+                display.value +=c
+            }
+        }
+        function validateLength() {
+            if(display.value.length < 35){
+                return true
+            }else{
+                return false
+            }
+        }
     </script>
 </body>
 </html>
